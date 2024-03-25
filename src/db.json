@@ -6,23 +6,44 @@
       "password": "qwerty123",
       "registed_at": "2050-09-22",
       "role_id": "0"
+    },
+    {
+      "id": "4490",
+      "login": "katya",
+      "password": "qwerty123",
+      "registed_at": "2061-06-01 13:44",
+      "role_id": 2
+    },
+    {
+      "id": "e09e",
+      "login": "ivan",
+      "password": "qwerty123",
+      "registed_at": "2054-09-25 18:29",
+      "role_id": 2
+    },
+    {
+      "id": "817a",
+      "login": "alex",
+      "password": "qwerty123",
+      "registed_at": "2064-01-01 06:29",
+      "role_id": 2
     }
   ],
   "roles": [
     {
-      "id": 0,
+      "id": "0",
       "name": "Администратор"
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Модератор"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Читатель"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Гость"
     }
   ],

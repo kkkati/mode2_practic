@@ -5,27 +5,20 @@
       "login": "anton",
       "password": "qwerty123",
       "registed_at": "2050-09-22",
-      "role_id": "0"
+      "role_id": 0
     },
     {
       "id": "4490",
       "login": "katya",
       "password": "qwerty123",
       "registed_at": "2061-06-01 13:44",
-      "role_id": 2
+      "role_id": 1
     },
     {
-      "id": "e09e",
+      "id": "896c",
       "login": "ivan",
       "password": "qwerty123",
-      "registed_at": "2054-09-25 18:29",
-      "role_id": 2
-    },
-    {
-      "id": "817a",
-      "login": "alex",
-      "password": "qwerty123",
-      "registed_at": "2064-01-01 06:29",
+      "registed_at": "2053-03-09 01:26",
       "role_id": 2
     }
   ],

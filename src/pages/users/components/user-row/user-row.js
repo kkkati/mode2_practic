@@ -61,7 +61,6 @@ export const UserRow = styled(UserRowContaiber)`
   height: 32px;
   margin-top: 10px;
 `;
-
 UserRow.propTypes = {
   id: PropTypes.string.isRequired,
   login: PropTypes.string.isRequired,

@@ -13,6 +13,13 @@
       "password": "qwerty123",
       "registed_at": "2061-06-01 13:44",
       "role_id": 1
+    },
+    {
+      "login": "petr",
+      "password": "qwerty123",
+      "registed_at": "2033-10-03 12:35",
+      "role_id": 2,
+      "id": "FYhv7Nm"
     }
   ],
   "roles": [
@@ -168,6 +175,34 @@
       "post_id": "003",
       "published_at": "2050-11-12 16:57",
       "content": "Мой комментарий 3"
+    },
+    {
+      "author_id": "4490",
+      "post_id": "004",
+      "published_at": "2053-04-09 03:56",
+      "content": "Комментарий 1",
+      "id": "LCVFeIr"
+    },
+    {
+      "author_id": "4490",
+      "post_id": "004",
+      "published_at": "2034-08-14 06:03",
+      "content": "Комментарий 2",
+      "id": "5UqBo_P"
+    },
+    {
+      "author_id": "001",
+      "post_id": "004",
+      "published_at": "2051-11-08 03:47",
+      "content": "Комментарий 3",
+      "id": "jNglndt"
+    },
+    {
+      "author_id": "FYhv7Nm",
+      "post_id": "004",
+      "published_at": "2040-08-16 15:38",
+      "content": "Комментарий от Петра",
+      "id": "IfO4lq2"
     }
   ],
   "sessions": [
@@ -258,6 +293,17 @@
         "roleId": 1
       },
       "id": "B-J6RpL"
+    },
+    {
+      "hash": "0.12014171729186018389157197816530242562294006347656",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwerty123",
+        "registedAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "hvK5hQw"
     }
   ]
 }

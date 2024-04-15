@@ -33,14 +33,14 @@ const PostContainer = ({ className }) => {
       setError(postData.error);
       setIsLoading(false);
     });
-  }, [dispatch, isCreating]);
+  }, [dispatch, isCreating, requestServer]);
 
   if (isLoading) {
     return null;
   }
 
   const SpecificPostPage =
-    isCreating || !isEditing ? (
+    isCreating || isEditing ? (
       <PrivateContent access={[ROLE.ADMIN]}>
         <div className={className}>
           <PostForm post={post} />
@@ -49,6 +49,7 @@ const PostContainer = ({ className }) => {
     ) : (
       <div className={className}>
         <PostContent post={post}></PostContent>
+
         <Comments comments={post.comments} postId={post.id}></Comments>
       </div>
     );

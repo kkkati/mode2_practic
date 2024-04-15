@@ -6,7 +6,8 @@ import { useServerRequest } from "../../../../hooks";
 import { selectUserId, selectUserRole } from "../../../../selectors";
 import { addCommentAsync } from "../../../../actions";
 import styled from "styled-components";
-import { ROLE } from "../../../../constans";
+import { PROP_TYPE, ROLE } from "../../../../constans";
+import PropTypes from "prop-types";
 
 const CommentsConteiner = ({ className, comments, postId }) => {
   const [newComment, setNewComment] = useState("");
@@ -75,3 +76,8 @@ export const Comments = styled(CommentsConteiner)`
     font-size: 18px;
   }
 `;
+
+Comments.propTypes = {
+  comments: PropTypes.arrayOf(PROP_TYPE.COMMENT).isRequired,
+  postId: PropTypes.string.isRequired,
+};

@@ -3,6 +3,8 @@ import { Error } from "../error/error";
 import { selectUserRole } from "../../selectors";
 import { ERROR } from "../../bff/constans";
 import { checkAccess } from "../../utils";
+import PropTypes from "prop-types";
+import { PROP_TYPE } from "../../constans";
 
 export const PrivateContent = ({ children, access, serverError = null }) => {
   const userRole = useSelector(selectUserRole);
@@ -13,4 +15,10 @@ export const PrivateContent = ({ children, access, serverError = null }) => {
   const error = serverError || accessError;
 
   return error ? <Error error={error} /> : children;
+};
+
+PrivateContent.propTypes = {
+  children: PropTypes.node.isRequired,
+  access: PropTypes.arrayOf(PROP_TYPE.ROLE_ID).isRequired,
+  serverError: PROP_TYPE.ERROR,
 };

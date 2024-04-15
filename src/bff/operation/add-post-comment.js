@@ -1,4 +1,4 @@
-import { addComment, getPost, getComments, getUsers } from "../api";
+import { addComment, getPost } from "../api";
 import { ROLE } from "../constans";
 import { sessions } from "../sessions";
 import { getPostCommentsWithAuthor } from "../utils";

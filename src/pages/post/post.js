@@ -33,7 +33,7 @@ const PostContainer = ({ className }) => {
       setError(postData.error);
       setIsLoading(false);
     });
-  }, [dispatch, isCreating, requestServer]);
+  }, [dispatch, isCreating, requestServer, params.id]);
 
   if (isLoading) {
     return null;
